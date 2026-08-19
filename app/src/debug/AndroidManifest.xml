@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application>
+        <receiver
+            android:name=".platform.StageSmokeReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.spatialapps.spatialruler.DEBUG_OPEN_STAGE" />
+                <action android:name="com.spatialapps.spatialruler.DEBUG_CAPTURE_SAMPLE" />
+                <action android:name="com.spatialapps.spatialruler.DEBUG_RENDER_SAMPLE" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>
